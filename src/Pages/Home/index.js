@@ -5,10 +5,11 @@ import Body from "./Components/Body";
 
 class index extends React.Component {
   render() {
+    const { db } = this.props;
     return (
       <>
         <Header />
-        <Body />
+        <Body db={db} />
         <Footer />
       </>
     );

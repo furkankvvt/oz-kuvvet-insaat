@@ -1,10 +1,188 @@
 html,
 body {
   margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.headerContainer {
-  background-color: red;
+.container {
+  width: 1200px;
+  height: 100%;
+}
+
+.header {
+  background-color: white;
   width: 100%;
-  height: 150px;
+  height: 200px;
+}
+
+.infoBar {
+  background-color: #323a45;
+  width: 100%;
+  height: 30px;
+}
+
+.logoBar {
+  background-color: white;
+  width: 100%;
+  height: 120px;
+}
+
+.menuBar {
+  background-color: #323a45;
+  width: 100%;
+  height: 50px;
+}
+
+.mail {
+  width: 200px;
+  height: 100%;
+}
+
+.phone {
+  width: 200px;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mr12 {
+  margin-right: 6px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+}
+
+.fa {
+  color: #32c8de !important;
+}
+
+span {
+  color: #999;
+}
+
+.px24 {
+  font-size: 24px !important;
+}
+
+.border-bottom-3px {
+  border-bottom: 3px solid #32c8de;
+}
+
+.menu {
+  width: 260px;
+  height: 100%;
+}
+
+.menu > a > span {
+  color: white;
+}
+
+.menu > a > span:hover {
+  color: #999;
+  cursor: pointer;
+}
+
+.body {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+}
+
+.align-self {
+  align-self: center;
+}
+
+.bg-dc {
+  background-color: #dcdcdc;
+}
+
+.products {
+  width: 100%;
+}
+
+.left-filter {
+  width: 300px;
+  height: 100%;
+  padding: 12px;
+}
+
+.right-products {
+  width: 1000px;
+  min-height: 500px;
+  height: auto;
+}
+
+.select-item {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.product-item {
+  width: 285px;
+  height: 350px;
+  margin-top: 12px;
+  background-color: #dcdcdc;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+.bg-323a45 {
+  background-color: #323a45;
+}
+
+.m-top-12 {
+  margin-top: 12px;
+}
+
+.slide {
+  background-image: url("./img/slide.jpg");
+  background-size: contain;
+  background-color: #cccccc;
+}
+
+.details {
+  width: 100%;
+  height: 600px;
+}
+
+.left-side {
+  width: 35%;
+  height: 100%;
+}
+
+.padding-24 {
+  padding: 24px;
 }
