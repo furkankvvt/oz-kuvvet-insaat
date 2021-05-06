@@ -1,5 +1,7 @@
 import React from "react";
 
+import Carousel from "react-elastic-carousel";
+
 let db;
 
 class Body extends React.Component {
@@ -48,14 +50,22 @@ class Body extends React.Component {
         <div className="body">
           <div className="details center">
             <div className="container bg-dc row">
-              <div className="left-side">
-                <img
-                  src={"/" + product.image}
-                  alt=""
-                  width="100%"
-                  height="100%"
-                  style={{ borderRadius: 6, objectFit: "fill" }}
-                />
+              <div className="left-side center">
+                <Carousel itemsToShow={1}>
+                  {product.images?.length > 0 &&
+                    product.images.map((item, key) => {
+                      return (
+                        <img
+                          key={key}
+                          src={"/" + item}
+                          alt=""
+                          width="100%"
+                          height="100%"
+                          style={{ borderRadius: 6, objectFit: "fill" }}
+                        />
+                      );
+                    })}
+                </Carousel>
               </div>
               <div className="right-side">
                 <div className="padding-24">
